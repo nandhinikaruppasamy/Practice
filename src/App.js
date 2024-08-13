@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Todo from './components/todo';
+import Theme from './components/theme';
+import Props from './components/Props';
+import { useState } from 'react';
+
 function App() {
+  const[username,setUsername] = useState("John");
   return (
     <div className="App">
-       <Todo/>
+      <Props name = {username}/>
     </div>
   );
 }
