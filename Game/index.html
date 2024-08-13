@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Added 'defer' to ensure script runs after HTML is parsed -->
+</head>
+<body>
+    <h2 style="text-align: center; font-size: xx-large; margin-top: 100px;">Guess the Number</h2>
+    <form id="guess-form">
+        <h4>Enter a number 1 to 100</h4>
+        <label for="number">Enter the number:</label>
+        <input type="number" id="number" required min="1" max="100"><br>
+        <input type="submit" value="Guess">
+    </form>
+    <span id="msg"></span>
+</body>
+</html>

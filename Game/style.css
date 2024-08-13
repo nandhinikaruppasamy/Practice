@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Added for better layout handling */
+}
+
+body {
+    background-color: #E2BFD9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#guess-form {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3rem;
+    background-color: #C8A1E0;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px; /* Add margin-top for spacing from top */
+}
+
+#guess-form h4 {
+    margin-bottom: 1rem; /* Space between heading and input */
+}
+
+#guess-form label,
+#guess-form input[type=number],
+#guess-form input[type=submit] {
+    display: block;
+    margin: 0 auto;
+}
+
+#guess-form input[type=number] {
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 150px;
+}
+
+#guess-form input[type=submit] {
+    padding: 3px;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#msg {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
