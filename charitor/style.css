@@ -55,8 +55,8 @@ footer p {
     background-image: 
         linear-gradient(
             to bottom,
-            rgba(167, 221, 223, 0.96) 0%,   /* Start color */
-            rgba(132, 175, 204, 0.08) 100%  /* End color */
+            rgba(167, 221, 223, 0.96) 0%,  
+            rgba(132, 175, 204, 0.08) 100%  
         ),
         url(images/blue.avif);
     background-size: cover;
@@ -148,10 +148,10 @@ h2 {
     text-align: center;
     padding: 3rem 2rem;
     font-size: large;
-    margin: 3rem auto; /* Center the section with margin */
-    width: 80%; /* Limit the width for better readability */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    margin: 3rem auto; 
+    width: 80%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #abt h2 {
@@ -170,7 +170,7 @@ h2 {
 .form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the form horizontally */
+    align-items: center; 
     padding: 2rem;
     text-align: center;
 }
@@ -178,21 +178,21 @@ h2 {
 .form form {
     display: flex;
     flex-direction: column;
-    width: 300px; /* Set a fixed width for the form */
+    width: 300px;
 }
 
 .form label {
     margin-bottom: 10px;
-    text-align: left; /* Align labels to the left */
+    text-align: left;
     font-size: 16px;
 }
 
 .form input[type="text"],
 .form input[type="password"],
 .form input[type="number"] {
-    width: 100%; /* Make inputs full width */
+    width: 100%; 
     padding: 10px;
-    margin-bottom: 20px; /* Add space between input fields */
+    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
@@ -210,5 +210,5 @@ h2 {
 }
 
 .form input[type="submit"]:hover {
-    background-color: #372ea1; /* Darken the button on hover */
+    background-color: #372ea1;
 }
