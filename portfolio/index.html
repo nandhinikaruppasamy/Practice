@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="images/original_pic.jfif" alt="Richard hanrick" width="80" style="border-radius: 40px;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Nandhini K</h1>
+
+          <p class="title">Front End Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">        
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:nandhininandhu1098@gmail.com" class="contact-link">nandhininandhu1098@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="phone:9345316826" class="contact-link">9345316826</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-02-14">February 14, 2004 </time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Cheyur, Avinashi, Tiruppur</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/nandhinikaruppasamy" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/nandhini-k-183586226" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/_nando_003?igsh=cWplMWk1cjFtdmh3" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Exploration</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Technology</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Front-End Developer from Coimbatore,Tamil Nadu, currently pursuing my IV-th year in B.E Computer Science and Engineering at 
+            KPR Institute of Engineering and Technology and also working as an intern in Mygate organisation.
+             I have a passion for creating dynamic and responsive web applications, 
+             with a specialization in building sleek and functional user interfaces that provide a seamless user experience.
+          </p>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">My Passion</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/web_dev.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/web_app.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/mobile_app.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="images/camera.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Soft Skills</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/problemsolving.jpg" alt="Daniel lewis" height="60" width="100" style="border-radius: 20px ;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Problem Solving</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Skilled in problem-solving, I transform complex challenges into intuitive and efficient solutions.   
+                </p>
+                <p>While coding in Java, I often face challenges like optimizing algorithms for better performance or debugging complex logic errors.
+                    In web development, I tackle issues such as cross-browser compatibility and ensuring responsive design across different devices. 
+                    I frequently resolve these by breaking down the problem, researching best practices, and iterating on solutions until they meet the desired outcome. 
+                    These challengess push me to continuously improve my skills and deliver high-quality results.</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/leadership.jfif" alt="Jessica miller" height="60" width="100" data-testimonials-avatar style="border-radius: 20px ;">
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Leadership</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    As the head of the CSE club association at my college, I lead the organization and execution of weekly events every Saturday, 
+                    focusing on enhancing student engagement and learning. I face challenges such as coordinating with team members, managing resources, 
+                    and ensuring smooth event flow. I tackle these by delegating tasks, fostering collaboration, and continuously refining our processes. 
+                    These leadership experiences have honed my ability to manage projects,
+                     motivate my peers, and deliver successful events that bring value to the participants.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="images/confidence.jfif" alt="Emily evans"  height="60" width="100"  style="border-radius: 20px ;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Confidence</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    In my role as the head of the CSE club association, I confidently lead the planning and execution of our weekly events. 
+                    Facing challenges such as coordinating multiple activities and ensuring high participation, 
+                    I approach each situation with a clear vision and decisive action. My confidence in decision-making and problem-solving enables me to inspire my team, 
+                    maintain momentum, and consistently deliver successful outcomes. 
+                    This leadership experience has strengthened my ability to take charge, make informed decisions, and achieve our goals with determination and poise.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="images/quotes.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Adaptaility</h4>
+
+              <div data-modal-text>
+               
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Certifications</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/hackerank.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/l&t.webp" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/nptel.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/udemy.jfif" height="160px" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="images/futureskills.jfif" height="160px" alt="client logo">
+              </a>
+            </li>
+            
+            <li class="clients-item">
+                <a href="#">
+                  <img src="images/coursera.jfif" height="160px" alt="client logo">
+                </a>
+              </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="exploration">
+
+        <header>
+          <h2 class="h2 article-title">Journey</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">St.Thomas Girls Higher Secondary School</h4>
+
+              <span>2013 - 2019</span>
+              <span>10% - 90.8</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cambridge Matriculation Higher Secondary School</h4>
+
+              <span>2019 - 2021</span>
+              <span>12% - 93.1</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">KPR Institute of Engineering and Technology</h4>
+
+              <span>2021 - 2025</span>
+              <span>B.E CSE - CGPA - 9.00 </span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Internships</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AXEL IT Solutions</h4>
+
+              <span>15/12/22 - 31/12/22 (2 weeks)</span>
+
+              <p class="timeline-text">
+                Gained experience in dynamic web app development by integrating PHP with MySQL.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Levitate Studios</h4>
+
+              <span>14/06/23 - 14/07/23 (1 month)</span>
+
+              <p class="timeline-text">
+                Experienced in cross-platform mobile app development using Flutter.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MyGate</h4>
+
+              <span>Present</span>
+
+              <p class="timeline-text">
+                Currently interning at MyGate, developing and optimizing mobile and web applications, while enhancing software development and project management skills.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/nandhinikaruppasamy/protfolio">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/portfolio.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Portfolio</h3>
+
+                <p class="project-category">Portfolio Website using HTML,CSS .</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/nandhinikaruppasamy/Login_PHP.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/login.jpg" height="50px" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Login Page</h3>
+
+                <p class="project-category">Login Page using PHP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/nandhinikaruppasamy/furniture.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/furniture.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Furniture</h3>
+
+                <p class="project-category">Furniture Website using HTML,CSS .</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/nandhinikaruppasamy/React_BMI.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/bmi.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BMI Application</h3>
+
+                <p class="project-category">The BMI is being computed based on height and weight.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/nandhinikaruppasamy/Simple-Enterprise-Page.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/enterprise.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Simple Enterprise Page</h3>
+
+                <p class="project-category">Using HTML and CSS it is completed</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile applications">
+              <a href="https://github.com/nandhinikaruppasamy/piano">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/piano.webp" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Piano</h3>
+
+                <p class="project-category">While playing, the notes are being translated into music.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile applications">
+              <a href="https://github.com/nandhinikaruppasamy/Speech-to-Text.git">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images/speech.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Speech to Text</h3>
+
+                <p class="project-category">While speaking, it is being converted into text.</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="technology">
+
+        <header>
+          <h2 class="h2 article-title">Languages</h2>
+        </header>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Programming Languages</h3>
+        
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+        
+              <div class="circle-wrapper">
+                <div class="circular-progress" data-value="60"></div>
+                <h5 class="h5">PHP</h5>
+                <data value="60">60%</data>
+              </div>
+        
+            </li>
+        
+            <li class="skills-item">
+        
+              <div class="circle-wrapper">
+                <div class="circular-progress" data-value="70"></div>
+                <h5 class="h5">Java</h5>
+                <data value="70">70%</data>
+              </div>
+        
+            </li>
+        
+            <li class="skills-item">
+        
+              <div class="circle-wrapper">
+                <div class="circular-progress" data-value="75"></div>
+                <h5 class="h5">Flutter</h5>
+                <data value="75">75%</data>
+              </div>
+        
+            </li>
+        
+            <li class="skills-item">
+        
+              <div class="circle-wrapper">
+                <div class="circular-progress" data-value="80"></div>
+                <h5 class="h5">HTML, CSS, JavaScript</h5>
+                <data value="80">80%</data>
+              </div>
+        
+            </li>
+        
+          </ul>
+        
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Tools </h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Android Studio</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Visual Studio</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Github</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>        
+
+        <section class="database-skills">
+
+          <h3 class="h3 database-title">Database</h3>
+        
+          <ul class="database-list">
+            <li class="database-item">MySQL</li>
+          </ul>
+        
+        </section>    
+        
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2011860.3576018566!2d76.30093384999999!3d9.9825565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1723700806333!5m2!1sen!2sin"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
