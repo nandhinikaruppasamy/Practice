@@ -1,28 +1,5 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-
-    /**
-     * colors
-     */
-  
-    /* gradient */
-  
+:root {  
     --bg-gradient-onyx: linear-gradient(
       to bottom right, 
       hsl(240, 1%, 25%) 3%, 
@@ -52,10 +29,7 @@
       to right, 
       hsl(45, 100%, 72%), 
       hsl(35, 100%, 68%)
-    );
-  
-    /* solid */
-  
+    ); 
     --jet: hsl(0, 0%, 22%);
     --onyx: hsl(240, 1%, 17%);
     --eerie-black-1: hsl(240, 2%, 13%);
@@ -68,15 +42,7 @@
     --light-gray: hsl(0, 0%, 84%);
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
-  
-    /**
-     * typography
-     */
-  
-    /* font-family */
     --ff-poppins: 'Poppins', sans-serif;
-  
-    /* font-size */
     --fs-1: 24px;
     --fs-2: 18px;
     --fs-3: 17px;
@@ -85,52 +51,26 @@
     --fs-6: 14px;
     --fs-7: 13px;
     --fs-8: 11px;
-  
-    /* font-weight */
     --fw-300: 300;
     --fw-400: 400;
     --fw-500: 500;
     --fw-600: 600;
-  
-    /**
-     * shadow
-     */
-    
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
     --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
     --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-  
-    /**
-     * transition
-     */
-  
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease-in-out;
-  
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
-  
   *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
   a { text-decoration: none; }
-  
   li { list-style: none; }
-  
   img, ion-icon, a, button, time, span { display: block; }
-  
   button {
     font: inherit;
     background: none;
@@ -138,33 +78,19 @@
     text-align: left;
     cursor: pointer;
   }
-  
   input, textarea {
     display: block;
     width: 100%;
     background: none;
     font: inherit;
   }
-  
   ::selection {
     background: var(--orange-yellow-crayola);
     color: var(--smoky-black);
   }
-  
   :focus { outline-color: var(--orange-yellow-crayola); }
-  
   html { font-family: var(--ff-poppins); }
-  
   body { background: var(--smoky-black); }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #REUSED STYLE
-  \*-----------------------------------*/
-  
   .sidebar,
   article {
     background: var(--eerie-black-2);
@@ -174,14 +100,12 @@
     box-shadow: var(--shadow-1);
     z-index: 1;
   }
-  
   .separator {
     width: 100%;
     height: 1px;
     background: var(--jet);
     margin: 16px 0;
   }
-  
   .icon-box {
     position: relative;
     background: var(--border-gradient-onyx);
@@ -196,12 +120,10 @@
     box-shadow: var(--shadow-1);
     z-index: 1;
   }
-  /* social-media icons */
   .socials-icons{
     color: var(--orange-yellow-crayola);
   
   }
-  
   .icon-box::before {
     content: "";
     position: absolute;
@@ -210,45 +132,31 @@
     border-radius: inherit;
     z-index: -1;
   }
-  
   .icon-box ion-icon { --ionicon-stroke-width: 35px; }
-  
   article { display: none; }
-  
   article.active {
     display: block;
     animation: fade 0.5s ease backwards;
   }
-  
   @keyframes fade {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-  
-  .h2,
-  .h3,
-  .h4,
-  .h5 {
+  .h2,.h3,.h4,.h5 {
     color: var(--white-2);
     text-transform: capitalize;
   }
-  
   .h2 { font-size: var(--fs-1); }
-  
   .h3 { font-size: var(--fs-2); }
-  
   .h4 { font-size: var(--fs-4); }
-  
   .h5 {
     font-size: var(--fs-7);
     font-weight: var(--fw-500);
   }
-  
   .article-title {
     position: relative;
     padding-bottom: 7px;
   }
-  
   .article-title::after {
     content: "";
     position: absolute;
@@ -259,24 +167,19 @@
     background: var(--text-gradient-yellow);
     border-radius: 3px;
   }
-  
   .has-scrollbar::-webkit-scrollbar {
-    width: 5px; /* for vertical scrollbar */
-    height: 5px; /* for horizontal scrollbar */
-  }
-  
+    width: 5px; 
+    height: 5px; 
+  }  
   .has-scrollbar::-webkit-scrollbar-track {
     background: var(--onyx);
     border-radius: 5px;
   }
-  
-  .has-scrollbar::-webkit-scrollbar-thumb {
+   .has-scrollbar::-webkit-scrollbar-thumb {
     background: var(--orange-yellow-crayola);
     border-radius: 5px;
-  }
-  
+  } 
   .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
-  
   .content-card {
     position: relative;
     background: var(--border-gradient-onyx);
@@ -297,27 +200,11 @@
     z-index: -1;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #MAIN
-  \*-----------------------------------*/
-  
   main {
     margin: 15px 12px;
     margin-bottom: 75px;
     min-width: 259px;
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #SIDEBAR
-  \*-----------------------------------*/
   
   .sidebar {
     margin-bottom: 15px;
@@ -451,14 +338,6 @@
   
   .social-item .social-link:hover { color: var(--light-gray); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #NAVBAR
-  \*-----------------------------------*/
-  
   .navbar {
     position: fixed;
     bottom: 0;
@@ -492,14 +371,6 @@
   
   .navbar-link.active { color: var(--orange-yellow-crayola); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #ABOUT
-  \*-----------------------------------*/
-  
   .about .article-title { margin-bottom: 15px; }
   
   .about-text {
@@ -510,12 +381,6 @@
   }
   
   .about-text p { margin-bottom: 15px; }
-  
-  
-  
-  /**
-   * #service 
-   */
   
   .service { margin-bottom: 35px; }
   
@@ -560,10 +425,6 @@
     line-height: 1.6;
   }
   
-  
-  /**
-   * #testimonials 
-   */
   
   .testimonials { margin-bottom: 30px; }
   
@@ -611,11 +472,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  
-  
-  /**
-   * #testimonials-modal
-   */
   
   .modal-container {
     position: fixed;
@@ -726,11 +582,6 @@
     line-height: 1.6;
   }
   
-  
-  /**
-   * #clients 
-   */
-  
   .clients { margin-bottom: 15px; }
   
   .clients-list {
@@ -761,21 +612,8 @@
   
   .clients-item img:hover { filter: grayscale(0); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #RESUME
-  \*-----------------------------------*/
-  
   .article-title { margin-bottom: 30px; }
-  
-  
-  /**
-   * education and experience 
-   */
-  
+
   .timeline { margin-bottom: 30px; }
   
   .timeline .title-wrapper {
@@ -834,11 +672,6 @@
     line-height: 1.6;
   }
   
-  
-  /**
-   * skills 
-   */
-  
   .skills-title { margin-bottom: 20px; }
   
   .skills-list { padding: 20px; }
@@ -891,17 +724,7 @@
     margin-bottom: 10px;
     margin-left: 30px;
     margin-top: -10px;
-  }
-  
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #PORTFOLIO
-  \*-----------------------------------*/
-  
+  }  
   .filter-list { display: none; }
   
   .filter-select-box {
@@ -1001,10 +824,10 @@
     transition: var(--transition-1);
   }
   .project-img img {
-    height: 200px; /* Set your desired height */
-    width: 100%; /* Ensure the image takes up the full width */
-    object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
-    display: block; /* Prevents any inline spacing issues */
+    height: 200px;
+    width: 100%; 
+    object-fit: cover; 
+    display: block;
   }
   .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
   
@@ -1057,14 +880,6 @@
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #BLOG
-  \*-----------------------------------*/
   
   .blog-posts { margin-bottom: 10px; }
   
@@ -1145,15 +960,7 @@
     font-weight: var(--fw-300);
     line-height: 1.6;
   }
-  
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #CONTACT
-  \*-----------------------------------*/
-  
+ 
   .mapbox {
     position: relative;
     height: 250px;
@@ -1253,56 +1060,17 @@
   
   .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #RESPONSIVE
-  \*-----------------------------------*/
-  
-  /**
-   * responsive larger than 450px screen
-   */
-  
   @media (min-width: 450px) {
   
-    /**
-     * client
-     */
-  
     .clients-item { min-width: calc(33.33% - 10px); }
-  
-  
-  
-    /**
-     * #PORTFOLIO, BLOG 
-     */
   
     .project-img,
     .blog-banner-box { height: auto; }
   
   }
-  
-  
-  
-  
-  
-  /**
-   * responsive larger than 580px screen
-   */
-  
   @media (min-width: 580px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
-  
     :root {
-  
-      /**
-       * typography
-       */
   
       --fs-1: 32px;
       --fs-2: 24px;
@@ -1313,13 +1081,6 @@
       --fs-8: 12px;
   
     }
-  
-  
-  
-    /**
-     * #REUSED STYLE
-     */
-  
     .sidebar, article {
       width: 520px;
       margin-inline: auto;
@@ -1343,22 +1104,10 @@
       font-size: 18px;
     }
   
-  
-  
-    /**
-     * #MAIN
-     */
-  
     main {
       margin-top: 60px;
       margin-bottom: 100px;
     }
-  
-  
-  
-    /**
-     * #SIDEBAR
-     */
   
     .sidebar {
       max-height: 180px;
@@ -1399,30 +1148,16 @@
       width: calc(100% - 64px);
     }
   
-  
-  
-    /**
-     * #NAVBAR
-     */
-  
     .navbar { border-radius: 20px 20px 0 0; }
   
     .navbar-list { gap: 20px; }
   
     .navbar-link { --fs-8: 14px; }
   
-  
-  
-    /**
-     * #ABOUT
-     */
-  
     .about .article-title { margin-bottom: 20px; }
   
     .about-text { margin-bottom: 40px; }
-  
-    /* service */
-  
+    
     .service-item {
       display: flex;
       justify-content: flex-start;
@@ -1437,9 +1172,7 @@
     }
   
     .service-content-box { text-align: left; }
-  
-    /* testimonials */
-  
+    
     .testimonials-title { margin-bottom: 25px; }
   
     .testimonials-list {
@@ -1471,8 +1204,6 @@
       -webkit-line-clamp: 2;
     }
   
-    /* testimonials modal */
-  
     .modal-container { padding: 20px; }
   
     .testimonials-modal {
@@ -1502,9 +1233,7 @@
       flex-grow: 1;
       width: 35px;
     }
-  
-    /* clients */
-  
+    
     .clients-list {
       gap: 50px;
       margin: 0 -30px;
@@ -1513,12 +1242,6 @@
     }
   
     .clients-item { min-width: calc(33.33% - 35px); }
-  
-  
-  
-    /**
-     * #RESUME
-     */
   
     .timeline-list { margin-left: 65px; }
   
@@ -1532,23 +1255,11 @@
   
     .skills-item:not(:last-child) { margin-bottom: 25px; }
   
-  
-  
-    /**
-     * #PORTFOLIO, BLOG
-     */
-  
     .project-img, .blog-banner-box { border-radius: 16px; }
   
     .blog-posts-list { gap: 30px; }
   
     .blog-content { padding: 25px; }
-  
-  
-  
-    /**
-     * #CONTACT
-     */
   
     .mapbox {
       height: 380px;
@@ -1573,50 +1284,19 @@
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive larger than 768px screen
-   */
-  
+ 
   @media (min-width: 768px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .sidebar, article { width: 700px; }
   
     .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
-  
-  
-  
-    /**
-     * SIDEBAR
-     */
-  
+
     .contacts-list {
       grid-template-columns: 1fr 1fr;
       gap: 30px 15px;
     }
   
-  
-  
-    /**
-     * NAVBAR
-     */
-  
     .navbar-link { --fs-8: 15px; }
-  
-  
-  
-    /**
-     * ABOUT
-     */
-  
-    /* testimonials modal */
   
     .testimonials-modal {
       gap: 35px;
@@ -1624,12 +1304,6 @@
     }
   
     .modal-avatar-box img { width: 80px; }
-  
-  
-  
-    /**
-     * PORTFOLIO
-     */
   
     .article-title { padding-bottom: 20px; }
   
@@ -1653,17 +1327,10 @@
     .filter-item button:hover { color: var(--light-gray-70); }
   
     .filter-item button.active { color: var(--orange-yellow-crayola); }
-  
-    /* portfolio and blog grid */
-  
+    
     .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
   
-  
-  
-    /**
-     * CONTACT
-     */
-  
+
     .input-wrapper { grid-template-columns: 1fr 1fr; }
   
     .form-btn {
@@ -1673,25 +1340,9 @@
     
   }
   
-  
-  
-  
-  
-  /**
-   * responsive larger than 1024px screen
-   */
-  
   @media (min-width: 1024px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
-  
     :root {
-  
-      /**
-      * shadow
-      */
   
       --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
       --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
@@ -1699,22 +1350,10 @@
   
     }
   
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
     .sidebar, article {
       width: 950px;
       box-shadow: var(--shadow-5);
     }
-  
-  
-  
-    /**
-     * MAIN 
-     */
   
     main { margin-bottom: 60px; }
   
@@ -1724,11 +1363,6 @@
       margin: auto;
     }
   
-  
-  
-    /**
-     * NAVBAR
-     */
   
     .navbar {
       position: absolute;
@@ -1749,58 +1383,22 @@
   
     .navbar-link { font-weight: var(--fw-500); }
   
-  
-  
-    /**
-     * ABOUT
-     */
-  
-    /* service */
-  
     .service-list {
       grid-template-columns: 1fr 1fr;
       gap: 20px 25px;
     }
   
-    /* testimonials */
-  
     .testimonials-item { min-width: calc(50% - 15px); }
-  
-    /* clients */
   
     .clients-item { min-width: calc(25% - 38px); }
   
-  
-  
-    /**
-     * PORTFOLIO
-     */
-  
     .project-list { grid-template-columns: repeat(3, 1fr); }
-  
-  
-  
-    /**
-     * BLOG
-     */
   
     .blog-banner-box { height: 230px; }
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive larger than 1250px screen
-   */
-  
   @media (min-width: 1250px) {
-  
-    /**
-     * RESET
-     */
   
     body::-webkit-scrollbar { width: 20px; }
   
@@ -1818,21 +1416,9 @@
   
     body::-webkit-scrollbar-button { height: 60px; }
   
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
     .sidebar, article { width: auto; }
   
     article { min-height: 100%; }
-  
-  
-  
-    /**
-     * MAIN
-     */
   
     main {
       max-width: 1200px;
@@ -1848,13 +1434,6 @@
       width: 75%;
       margin: 0;
     }
-  
-  
-  
-    /**
-     * SIDEBAR
-     */
-  
     .sidebar {
       position: sticky;
       top: 60px;
@@ -1903,12 +1482,6 @@
   
     .social-list { justify-content: center; }
   
-  
-  
-    /**
-       * RESUME
-       */
-  
     .timeline-text { max-width: 700px; }
   
   }
@@ -1920,7 +1493,7 @@
   }
   
   .skills-item {
-    flex: 1 1 calc(25% - 20px); /* Adjust the width of each skill item */
+    flex: 1 1 calc(25% - 20px); 
     text-align: center;
   }
   
